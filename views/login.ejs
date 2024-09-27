@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(0, 151, 111);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgb(0, 151, 111);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid rgb(0, 151, 111);;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: rgb(0, 151, 111);;
+        }
+        input[type="submit"] {
+            background-color: rgb(0, 151, 111);
+            color: black;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(0, 104, 76);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/user/login" method="POST">
+            <input type="text" placeholder="Username" required name="name">
+            <input type="text" placeholder="Email" required name="email">
+            <input type="password" placeholder="Password" required name="password">
+            <input type="submit" value="Login">
+            <p>Don't have an account?<a class="link" href="/user/signup">SignUp</a></p>
+        </form>
+    </div>
+</body>
+</html>
