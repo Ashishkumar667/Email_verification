@@ -32,7 +32,3 @@ Clone the repository:
 
 npm install
 Create a .env file and set the following environment variables:
-
-# videos
-video of this project , checkout now-
-<a href= "https://www.loom.com/share/3171720b42c24bd18b945fa174c947b5?sid=17add9a7-f605-4b6c-8781-269ac2bf731c">Click here</a>
